@@ -26,7 +26,7 @@ Once this command is executed you will be inside the container to interact with 
 We have dev and prod environments, but in this example we are going to use the dev environment.
 
 ```
-cd terraform/dev/storage
+cd dev/storage
 terragrunt init
 terragrunt fmt
 terragrunt validate
@@ -40,10 +40,11 @@ https://developer.hashicorp.com/terraform/cli/commands
 
 ## Next Steps
 
-- Add the necessary infrastructure to build a website
+- Add GitHub actions to generate the infrastructure at every approved PR
 
 ## References
 
 - https://github.com/CodelyTV/terraform-course
 - https://pro.codely.com/library/terraform-buenas-practicas-llevando-tu-infraestructura-a-codigo-193451/479241/about/
+- https://registry.terraform.io/providers/hashicorp/aws/latest
 - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html
